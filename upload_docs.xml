@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral_variant10"
+    android:backgroundTint="@color/material_dynamic_neutral_variant10"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/Aadhar1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/cardview_dark_background"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:backgroundTintMode="src_atop"
+        android:foregroundTint="@color/white"
+        android:foregroundTintMode="screen"
+        app:layout_constraintBottom_toTopOf="@+id/uploadbtn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/uploadbtn1"
+        android:layout_width="266dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#FCD722"
+        android:fontFamily="@font/aldrich"
+        android:text="UPLOAD AADHAR"
+        android:textColor="@color/material_dynamic_neutral0"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/DrivingLic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Aadhar1" />
+
+    <ImageView
+        android:id="@+id/DrivingLic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="38dp"
+        android:background="@color/cardview_dark_background"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:backgroundTintMode="src_atop"
+        android:foregroundTint="@color/white"
+        android:foregroundTintMode="screen"
+        app:layout_constraintBottom_toTopOf="@+id/uploadbtn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadbtn1" />
+
+    <Button
+        android:id="@+id/uploadbtn2"
+        android:layout_width="271dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="113dp"
+        android:backgroundTint="#FCD722"
+        android:fontFamily="@font/aldrich"
+        android:text="UPLOAD DRIVING LICENSE"
+        android:textColor="@color/material_dynamic_neutral0"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DrivingLic" />
+
+    <Button
+        android:id="@+id/nextbtn1"
+        android:layout_width="153dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#FCD722"
+        android:fontFamily="@font/aldrich"
+        android:text="NEXT"
+        android:textColor="@color/material_dynamic_neutral0"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadbtn2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

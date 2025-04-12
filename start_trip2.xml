@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral_variant10">
+
+    <ImageView
+        android:id="@+id/DriverimageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sign_up_box" />
+
+    <TextView
+        android:id="@+id/tdtextView"
+        android:layout_width="215dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="@font/aldrich"
+        android:text="TRIP DETAILS"
+        android:textAlignment="center"
+        android:textColor="#FCD722"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tdtextView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tdtextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="66dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="ENTER TRIP DETAILS"
+        android:textColor="#ffffbb33"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tdeditText1"
+        app:layout_constraintStart_toStartOf="@+id/tdtextView"
+        app:layout_constraintTop_toBottomOf="@+id/tdtextView" />
+
+    <EditText
+        android:id="@+id/tdeditText1"
+        android:layout_width="242dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="27dp"
+
+        android:background="@drawable/edittext_round"
+        android:ems="10"
+        android:hint="Enter Location"
+        android:inputType="text"
+        android:textAlignment="viewStart"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tdeditText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tdtextView2"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/tdeditText2"
+        android:layout_width="242dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+
+        android:background="@drawable/edittext_round"
+        android:ems="10"
+        android:hint="Enter Destination"
+        android:inputType="text"
+        android:textAlignment="viewStart"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tdeditText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tdeditText1"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/tdeditText3"
+        android:layout_width="242dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+
+        android:background="@drawable/edittext_round"
+        android:ems="10"
+        android:hint="Enter date of departure"
+        android:inputType="date"
+
+        android:textAlignment="viewStart"
+
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tdeditText4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tdeditText2"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/tdeditText4"
+        android:layout_width="242dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+
+        android:background="@drawable/edittext_round"
+        android:ems="10"
+        android:hint="Enter time of departure"
+        android:inputType="time"
+
+        android:textAlignment="viewStart"
+
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tdeditText5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tdeditText3"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/tdeditText5"
+        android:layout_width="242dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="35dp"
+
+        android:background="@drawable/edittext_round"
+        android:ems="10"
+        android:hint="Enter No. of Passengers"
+        android:inputType="number"
+
+        android:textAlignment="viewStart"
+
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tdSubmitBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tdeditText4"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/tdSubmitBtn"
+        android:layout_width="284dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="115dp"
+        android:backgroundTint="#FCD722"
+        android:fontFamily="@font/aldrich"
+        android:text="PROCEED TO PAYMENT"
+        android:textColor="@color/material_dynamic_neutral_variant10"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tdeditText5"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
